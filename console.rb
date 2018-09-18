@@ -20,13 +20,34 @@ movie1 = Movie.new({
     movie2.save()
 
     movie3 = Movie.new({
-      'title' => 'Mission Impossible'
+      'title' => 'Mission Impossible',
       'genre' => 'action'
       })
       movie3.save()
 
-      movie4 = Movie.neew({
-        'title' => 'The Big Lebowski'
+      movie4 = Movie.new({
+        'title' => 'The Big Lebowski',
         'genre' => ' comedy'
         })
         movie4.save()
+
+star1 = Star.new({
+  'first_name' => 'Bill',
+  'last_name' => 'Murray'
+  })
+  star1.save()
+
+star2 = Star.new({
+  'first_name' => 'Tom',
+  'last_name' => 'Cruise'
+  })
+  star2.save()
+
+  star3 = Star.ne({
+    'first_name' => 'Jeff',
+    'last_name' => 'Bridges'
+    })
+    star3.save()
+
+binding.pry
+nil
